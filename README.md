@@ -186,12 +186,12 @@ The program is made and tested in java version "1.8.0_291". So, you should have 
 ## How to Build and Run
 In src folder, enter the following command to compile the code. Binary files will be produced with extention `.class`
 ```
-javac ParseAndTranslate/*.java
+javac VirtualMachine/*.java
 ```
 
 To run this file, enter the following in src folder:
 ```
-java ParseAndTranslate.Source
+java VirtualMachine.Source
 ```
 
 ## License
