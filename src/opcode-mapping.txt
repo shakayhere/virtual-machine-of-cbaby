@@ -1,0 +1,24 @@
+1	+
+2	-
+3	*
+4	/
+5	=
+
+10	LT
+11	LE
+12	GT
+13	GE
+14	EQ
+15	NE
+
+20	in
+21	out
+22	ret
+23	goto
+24	param
+25	call
+
+30	integer
+31	char
+
+40+	Defined Function ID

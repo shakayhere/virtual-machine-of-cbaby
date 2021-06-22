@@ -1,0 +1,105 @@
+func void: write(Integer: c)
+{
+	println(c);
+	ret;
+}
+
+func Integer: numPrint (Integer: num, Integer: length)
+{
+	Integer: i, j, first, temp;
+	char : a;
+	a := 'x';
+	println ( "enter number" );
+	In>> i;
+	println (i);
+	i := length;
+	while i > 0 :
+	{
+		first:= 0;
+		j := 1;
+		while j < i:
+		{
+			write( j);
+			j := j + 1;
+		}
+		if j == 1:{
+			println("one");
+		}
+		elif j==2:{
+			println("two");
+		}
+		else
+		{
+			println("others");
+		}
+		/* this is a comment */
+		i:= i - 1;
+		/*This is a
+		Multiline
+		Comment*/
+	}
+	println ( "temp is ");
+	temp := 10;
+	println(temp);
+	ret i;
+}
+
+func void: writeChar(char: ct)
+{
+	println(ct);
+	ret;
+}
+
+func void: main()		
+{
+	Integer: a, b;
+	
+	Integer: h;
+	a := 'A';
+	b := 5;
+	
+	println("'write' function");
+	write(a);
+	
+	println("'writeChar' function");
+	writeChar(a);
+	
+	println("'numPrint' function");
+	h := numPrint(a,b);
+	println(h);
+	
+	Integer: w1, w2;
+	w1 := 1;
+	w2 := 1;
+	println();
+	println("Nested loop check");
+	
+	while w1 <= 2:
+	{
+		while w2 <= 2:
+		{
+			print("Hello ");
+			print(w1);
+			print(" Compiler ");
+			println(w2);
+			w2 := w2 + 1;
+		}
+		
+		w2 := 1;
+		w1 := w1 + 1;
+	}
+	
+	
+	println("Nested condition check");
+	
+	if w1 < 10:
+	{
+		println("Hello 1st IF");
+		if w2 < 10:
+		{
+			println("Hello 2nd IF");
+		}
+	}
+	
+	ret;
+}

@@ -1,0 +1,149 @@
+1	write:
+2	integer c
+3	out c
+4	t1 = "\n"
+5	out t1
+6	ret 
+7	numPrint:
+8	integer num
+9	integer length
+10	integer i
+11	integer j
+12	integer first
+13	integer temp
+14	char a
+15	a = 'x'
+16	t2 = "enter number"
+17	out t2
+18	t3 = "\n"
+19	out t3
+20	In i
+21	out i
+22	t4 = "\n"
+23	out t4
+24	i = length
+25	while (i GT 0) goto 27
+26	goto 57
+27	first = 0
+28	j = 1
+29	while (j LT i) goto 31
+30	goto 36
+31	param j
+32	call write 1
+33	t5 = j + 1
+34	j = t5
+35	goto 29
+36	if (j EQ 1) goto 38
+37	goto 43
+38	t6 = "one"
+39	out t6
+40	t7 = "\n"
+41	out t7
+42	goto 54
+43	if (j EQ 2) goto 45
+44	goto 50
+45	t8 = "two"
+46	out t8
+47	t9 = "\n"
+48	out t9
+49	goto 54
+50	t10 = "others"
+51	out t10
+52	t11 = "\n"
+53	out t11
+54	t12 = i - 1
+55	i = t12
+56	goto 25
+57	t13 = "temp is "
+58	out t13
+59	t14 = "\n"
+60	out t14
+61	temp = 10
+62	out temp
+63	t15 = "\n"
+64	out t15
+65	ret i
+66	writeChar:
+67	char ct
+68	out ct
+69	t16 = "\n"
+70	out t16
+71	ret 
+72	main:
+73	integer a
+74	integer b
+75	integer h
+76	a = 'A'
+77	b = 5
+78	t17 = "'write' function"
+79	out t17
+80	t18 = "\n"
+81	out t18
+82	param a
+83	call write 1
+84	t19 = "'writeChar' function"
+85	out t19
+86	t20 = "\n"
+87	out t20
+88	param a
+89	call writeChar 1
+90	t21 = "'numPrint' function"
+91	out t21
+92	t22 = "\n"
+93	out t22
+94	param a
+95	param b
+96	call numPrint 2 h
+97	out h
+98	t23 = "\n"
+99	out t23
+100	integer w1
+101	integer w2
+102	w1 = 1
+103	w2 = 1
+104	t24 = "\n"
+105	out t24
+106	t25 = "\n"
+107	out t25
+108	t26 = "Nested loop check"
+109	out t26
+110	t27 = "\n"
+111	out t27
+112	while (w1 LE 2) goto 114
+113	goto 131
+114	while (w2 LE 2) goto 116
+115	goto 127
+116	t28 = "Hello "
+117	out t28
+118	out w1
+119	t29 = " Compiler "
+120	out t29
+121	out w2
+122	t30 = "\n"
+123	out t30
+124	t31 = w2 + 1
+125	w2 = t31
+126	goto 114
+127	w2 = 1
+128	t32 = w1 + 1
+129	w1 = t32
+130	goto 112
+131	t33 = "Nested condition check"
+132	out t33
+133	t34 = "\n"
+134	out t34
+135	if (w1 LT 10) goto 137
+136	goto 149
+137	t35 = "Hello 1st IF"
+138	out t35
+139	t36 = "\n"
+140	out t36
+141	if (w2 LT 10) goto 143
+142	goto 148
+143	t37 = "Hello 2nd IF"
+144	out t37
+145	t38 = "\n"
+146	out t38
+147	goto 148
+148	goto 149
+149	ret 

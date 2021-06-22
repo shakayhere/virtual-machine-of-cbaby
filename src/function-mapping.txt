@@ -1,0 +1,4 @@
+write	40
+numPrint	41
+writeChar	42
+main	43
