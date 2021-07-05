@@ -1,5 +1,5 @@
 # Virtual Machine of CBaby
-The attached project is the final step of a simple compiler that converts three address code to machine code and then executes the code in a virtual machine.
+The attached project is the final step of a simple compiler that converts three address code to machine code and then executes the (.cbaby) code in a virtual machine.
 
 [About CBaby Language](https://github.com/shakayhere/lexical-analyzer-of-cbaby#about-cbaby-language)
 <br />
