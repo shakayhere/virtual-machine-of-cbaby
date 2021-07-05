@@ -1,5 +1,5 @@
 # Virtual Machine of CBaby
-The attached project converts three address code to machine code and then executes the code in a virtual machine of language (defined by rules) called CBaby
+The attached project converts three address code to machine code and then executes the code in a virtual machine of a compiler for language (defined by rules) called CBaby
 
 [About CBaby Language](https://github.com/shakayhere/lexical-analyzer-of-cbaby#about-cbaby-language)
 <br />
